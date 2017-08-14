@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.translations {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.translation-box {
+    flex: 1 1 auto;
+    min-width: 20rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+textarea {
+    min-height: 10rem;
+    resize: none;
+}
+
+.intro {
+    padding-bottom: 2rem;
+}
+
+body {
+    padding: 2rem;
+}
+
+button {
+    padding: 1rem;
+}
