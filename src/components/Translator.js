@@ -1,4 +1,5 @@
 import React from 'react'
+import copy from 'copy-to-clipboard';
 
 class Translator extends React.Component {
     englishChanged(e) {
@@ -21,7 +22,7 @@ class Translator extends React.Component {
                             this.englishTextArea = englishTextArea
                         }}
                         onChange={e => this.englishChanged(e)}/>
-                    <button>Copy to clipboard</button>
+                    <button onClick={() => copy(this.englishTextArea.value)}>Copy to clipboard</button>
                 </div>
                 <div className="translation-box">
                     <h2>Al Bhed</h2>
@@ -30,7 +31,7 @@ class Translator extends React.Component {
                             this.alBhedTextArea = alBhedTextArea
                         }}
                         onChange={e => this.alBhedChanged(e)}/>
-                    <button>Copy to clipboard</button>
+                    <button onClick={() => copy(this.alBhedTextArea.value)}>Copy to clipboard</button>
                 </div>
             </div>)
 
