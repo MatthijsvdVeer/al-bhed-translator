@@ -1,18 +1,17 @@
-import React, {Component} from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 import TranslatorContainer from './components/TranslatorContainer'
 
 class App extends Component {
-    render() {
+    render () {
         return (
             <div>
                 <div className="intro">
-                    <h1>Title</h1>
+                    <h1>Al Bhed Translator</h1>
                     <div>
                         <p>
-                            Welcome to the Al Bhed Translator! This site is a homage to the Al Bhed-O-Fier I made for
-                            MSN
-                            Messenger Plus. This site is in no way finished. You can find the source code at
+                            Welcome to the Al Bhed Translator! The first program I ever wrote was a plugin for MSN
+                            Messenger Plus called the Al Bhed-O-Fier. I decided to rebuild its functionality here. This site is in no way finished. You can find the source code at&nbsp;
                             <a href="https://github.com/MatthijsvdVeer/al-bhed-translator">GitHub</a>
                         </p>
                         <p>
@@ -20,10 +19,10 @@ class App extends Component {
                         </p>
                     </div>
                 </div>
-                < TranslatorContainer/>
+                < TranslatorContainer />
             </div>
-        );
+        )
     }
 }
 
-export default App;
+export default App
