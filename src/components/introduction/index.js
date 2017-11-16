@@ -8,7 +8,8 @@ export default () => (
         Welcome to the Al Bhed Translator! The first program I ever wrote was a
         plugin for MSN Messenger Plus called the Al Bhed-O-Fier. I decided to
         rebuild its functionality here. This site is in no way finished. You can
-        find the source code at&nbsp;<a href="https://github.com/MatthijsvdVeer/al-bhed-translator">
+        find the source code at&nbsp;
+        <a href="https://github.com/MatthijsvdVeer/al-bhed-translator">
           GitHub
         </a>
       </p>
