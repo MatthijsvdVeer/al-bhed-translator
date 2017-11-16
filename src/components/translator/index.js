@@ -1,4 +1,5 @@
 import React from "react"
+import copy from "copy-to-clipboard"
 
 export default props => (
   <div>
@@ -6,5 +7,6 @@ export default props => (
       onChange={e => props.updateText(e.target.value)}
       value={props.value}
     />
+    <button onClick={() => copy(props.value)}>Copy to clipboard</button>
   </div>
 )
