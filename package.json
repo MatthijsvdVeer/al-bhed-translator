@@ -31,6 +31,9 @@
       "git add"
     ]
   },
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
   "devDependencies": {
     "eslint": "^4.9.0",
     "husky": "^0.14.3",
