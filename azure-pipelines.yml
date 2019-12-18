@@ -17,7 +17,11 @@ steps:
   inputs:
     command: 'custom'
     customCommand: 'run build --production'
-
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '/build'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
