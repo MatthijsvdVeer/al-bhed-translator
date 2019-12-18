@@ -13,15 +13,18 @@ steps:
 - task: Npm@1
   inputs:
     command: 'install'
+
 - task: Npm@1
   inputs:
     command: 'custom'
     customCommand: 'run build --production'
+
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '/build'
+    SourceFolder: '$(Build.SourcesDirectory)/build'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
